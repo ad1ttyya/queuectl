@@ -491,9 +491,7 @@ Developed as part of the Backend Developer Internship Assignment.
 
 ## 🔗 Repository
 
-**GitHub Repository**: [View on GitHub](https://github.com/YOUR_USERNAME/queuectl)
-
-*Note: Update the repository link after pushing to GitHub.*
+**GitHub Repository**: [View on GitHub](https://github.com/ad1ttyya/queuectl)
 
 ## 📝 Additional Documentation
 
