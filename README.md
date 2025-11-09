@@ -4,9 +4,9 @@ A production-grade CLI-based background job queue system with worker processes, 
 
 ## 📹 Demo Video
 
-**Working CLI Demo**: [Watch the demo video here](https://drive.google.com/file/d/YOUR_VIDEO_ID/view)
+**Working CLI Demo**: [Watch the demo video here](https://drive.google.com/file/d/1v96yPTWFXBciIk82M91NW8ltkmshn8ub/view?usp=drive_link)
 
-*Note: Demo video will be uploaded to Google Drive and link will be updated.*
+The demo video shows all features including job enqueueing, worker processing, retry mechanism, DLQ functionality, configuration management, and persistence testing.
 
 ## 📚 Documentation
 
@@ -238,18 +238,46 @@ After `max_retries` attempts, jobs are moved to the Dead Letter Queue.
 
 ## 🧪 Testing
 
+### Quick Test Run
+
+**Run the test script:**
+```bash
+python test_queuectl.py
+```
+
+### Prerequisites
+
+Before running tests, make sure dependencies are installed:
+
+```bash
+pip install -r requirements.txt
+```
+
+Optionally, install the package in development mode:
+
+```bash
+pip install -e .
+```
+
+### Test Cases
+
+The test suite includes 5 test cases:
+
+1. ✅ **Basic job completion** - Tests successful job execution
+2. ✅ **Failed job retry and DLQ** - Tests retry mechanism and DLQ
+3. ✅ **Multiple workers processing** - Tests concurrent processing
+4. ✅ **Job persistence** - Tests data survival across restarts
+5. ✅ **DLQ retry functionality** - Tests manual retry from DLQ
+
+### Testing Instructions
+
 Run the validation script to test core functionality:
 
 ```bash
 python test_queuectl.py
 ```
 
-This script tests:
-1. ✅ Basic job completion
-2. ✅ Failed job retry and DLQ
-3. ✅ Multiple workers processing
-4. ✅ Job persistence
-5. ✅ DLQ retry functionality
+This script tests all core features including job execution, retries, DLQ, persistence, and multiple workers.
 
 ### Manual Testing Examples
 
@@ -470,7 +498,6 @@ Developed as part of the Backend Developer Internship Assignment.
 ## 📝 Additional Documentation
 
 - **[DESIGN.md](DESIGN.md)** - Detailed architecture and design documentation
-- **[GITHUB_SETUP.md](GITHUB_SETUP.md)** - Instructions for setting up GitHub repository and recording demo
 
 ---
 

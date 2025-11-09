@@ -32,6 +32,11 @@ ENV/
 *.sqlite3
 queuectl.db
 
+# Build artifacts
+*.egg-info/
+__pycache__/
+*.pyc
+
 # IDE
 .vscode/
 .idea/
