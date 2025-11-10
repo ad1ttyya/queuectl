@@ -34,7 +34,7 @@ The demo video shows all features including job enqueueing, worker processing, r
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/ad1ttyya/queuectl
 cd Flam-Assignment
 ```
 
